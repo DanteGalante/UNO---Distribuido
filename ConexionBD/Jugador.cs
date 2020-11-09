@@ -10,7 +10,7 @@
 namespace ConexionBD
 {
     using System;
-    using System.Collections.ObjectModel;
+    using System.Collections.Generic;
     
     public partial class Jugador
     {
