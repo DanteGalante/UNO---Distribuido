@@ -1,0 +1,24 @@
+﻿<Window x:Class="VentanaRegistro.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VentanaRegistro"
+        xmlns:language="clr-namespace:VentanaRegistro.Properties.Langs"
+        mc:Ignorable="d"
+        Title="{x:Static language:Lang.titulo_seleccionarLenguaje}" Height="155" Width="389">
+    <Grid HorizontalAlignment="Left" Width="379">
+        <Image  HorizontalAlignment="Left" Height="67" Margin="71,27,0,0" VerticalAlignment="Top" Width="100" Source="banderaEspaña.png"/>
+        <Button x:Name="btn_Esp" Content="{x:Static language:Lang.español}" HorizontalAlignment="Left" Margin="71,27,0,0" VerticalAlignment="Top" Width="100" Height="67" FontWeight="Bold" BorderBrush="Black" Foreground="White" Click="btn_Esp_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <Image  HorizontalAlignment="Left" Height="67" Margin="200,27,0,0" VerticalAlignment="Top" Width="100" Source="banderaReinoUnido.png" Stretch="Fill"/>
+        <Button x:Name="btn_Ingles" Content="{x:Static language:Lang.ingles}" HorizontalAlignment="Left" Margin="200,27,0,0" VerticalAlignment="Top" Width="100" Height="67" FontWeight="Bold" BorderBrush="Black" Foreground="White" Click="btn_Ingles_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>
